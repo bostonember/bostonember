@@ -1,0 +1,20 @@
+<section>
+  <div class="page-header">
+    <h2>Meetings</h2>
+  </div>
+
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each controller}}
+        <tr>
+          <td><a {{bindAttr href="eventUrl"}}>{{name}}</a></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</section>

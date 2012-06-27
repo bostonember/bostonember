@@ -1,0 +1,43 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="/">Boston Ember.js Group</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li>
+            <a {{action showMeetings href=true}}>Meetings</a>
+          </li>
+          <li>
+            <a {{action showMembers href=true}}>Members</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="application" class="container">
+  <header class="jumbotron subhead">
+    <div class="page-header">
+      <h1>Boston Ember.js Group</h1>
+    </div>
+  </header>
+
+  <p>Not only the homepage of the Boston Ember.js Group, but an application developed in Ember.js to help teach the framework.</p>
+
+  {{outlet}}
+
+  <footer class="footer">
+    <div class="page-header"></div>
+
+    <p>
+      Created by the <a href="https://www.github.com/bostonember" target="_blank">Boston Ember.js Group</a>.<br />
+      Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.
+    </p>
+  </footer>
+</div>
