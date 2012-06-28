@@ -6,7 +6,7 @@ App.Router = Ember.Router.extend({
     }),
 
     showMeetings: Ember.Route.transitionTo('meetings'),
-    showMembers: Ember.Route.transitionTo('members'),
+    showMembers: Ember.Route.transitionTo('members.index'),
 
     meetings: Ember.Route.extend({
       route: '/meetings',
