@@ -84,9 +84,11 @@ class MeetupAPI
 
     results = parsed_response_body["results"].map do |result|
       {
-        :id   => result["id"],
-        :name => result["name"],
-        :link => result["link"]
+        :id         => result["id"],
+        :name       => result["name"],
+        :link       => result["link"],
+        :photo_link => result["photo"]["photo_link"],
+        :thumb_link => result["photo"]["thumb_link"]
       }
     end
 

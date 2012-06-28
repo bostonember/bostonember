@@ -9,3 +9,7 @@ App.MeetingsView = Ember.View.extend({
 App.MembersView = Ember.View.extend({
   templateName: 'members'
 });
+
+App.MemberView = Ember.View.extend({
+  templateName: 'member'
+});

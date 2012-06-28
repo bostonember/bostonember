@@ -1,20 +1,11 @@
 <section>
   <div class="page-header">
     <h2>Members</h2>
-	</div>
+  </div>
 
-  <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <th>Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each controller}}
-        <tr>
-          <td><a {{bindAttr href="link"}}>{{name}}</a></td>
-        </tr>
-      {{/each}}
-    </tbody>
-  </table>
+  {{outlet}}
+
+  {{#each controller}}
+    <a {{action showMember href=true}}><img {{bindAttr src="thumb_link"}} width="50" height="50"></a>
+  {{/each}}
 </section>
